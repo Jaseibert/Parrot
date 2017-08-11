@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRz-9V-UQ5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parrot Logo 2" translatesAutoresizingMaskIntoConstraints="NO" id="eVi-1n-ESP">
+                                        <rect key="frame" x="76.5" y="96" width="222" height="195"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="195" id="LeF-cY-e8S"/>
+                                            <constraint firstAttribute="width" constant="222" id="WE1-f7-w8a"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kfE-8p-WXm">
+                                        <rect key="frame" x="111" y="339" width="153" height="119"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parrot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nda-Bo-rra">
+                                                <rect key="frame" x="17" y="0.0" width="118" height="72.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBoldItalic" family="Avenir Next Condensed" pointSize="53"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice-to-Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4P-k4-CGb">
+                                                <rect key="frame" x="0.0" y="72.5" width="152.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="34"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4039215686" green="0.90588235289999997" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kfE-8p-WXm" firstAttribute="centerX" secondItem="CRz-9V-UQ5" secondAttribute="centerX" id="Ano-Kp-beK"/>
+                                    <constraint firstItem="eVi-1n-ESP" firstAttribute="centerX" secondItem="CRz-9V-UQ5" secondAttribute="centerX" id="D3d-Dk-lG7"/>
+                                    <constraint firstItem="kfE-8p-WXm" firstAttribute="top" secondItem="eVi-1n-ESP" secondAttribute="bottom" constant="48" id="biZ-dp-nZu"/>
+                                    <constraint firstItem="eVi-1n-ESP" firstAttribute="top" secondItem="CRz-9V-UQ5" secondAttribute="top" constant="96" id="wF6-u0-Nhb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="CRz-9V-UQ5" secondAttribute="bottom" id="cRv-pJ-BEG"/>
+                            <constraint firstAttribute="trailing" secondItem="CRz-9V-UQ5" secondAttribute="trailing" id="cXY-ap-06B"/>
+                            <constraint firstItem="CRz-9V-UQ5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hh7-Lw-UTh"/>
+                            <constraint firstItem="CRz-9V-UQ5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="sLS-qN-TSR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Parrot Logo 2" width="855" height="666"/>
+    </resources>
+</document>
